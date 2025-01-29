@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+:root {
+  --first-color:  #344c36;
+  --second-color:  #faad1b;
+}
 
 body {
 
