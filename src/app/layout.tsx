@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cn(`${plusJakarta.variable} antialiased`)}`}
+        className={`${cn(`${plusJakarta.variable} antialiased overflow-hidden`)}`}
       >
         <Header />
         {children}

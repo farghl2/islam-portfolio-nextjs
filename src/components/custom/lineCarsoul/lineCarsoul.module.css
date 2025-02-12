@@ -1,0 +1,22 @@
+.line {
+   
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width:100%; 
+  white-space: nowrap; 
+  animation: translateLine 20s linear infinite; 
+
+  }
+  
+  @keyframes translateLine {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+ 
