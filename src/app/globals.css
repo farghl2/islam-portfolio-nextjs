@@ -7,6 +7,10 @@
   --second-color:  #faad1b;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
 
   font-family: ' Plus_Jakarta_Sans', Arial, Helvetica, sans-serif;
@@ -80,6 +84,7 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  
   }
 }
 

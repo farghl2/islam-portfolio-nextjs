@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./hero.module.css";
-import CustomButton from "../CustomButton/customButton";
+import CustomButton from "../../atoms/CustomButton/customButton";
 
 
 const Hero = () => {

@@ -5,7 +5,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { AlignJustify } from "lucide-react";
-import { buttonVariants } from "../../ui/button";
+import { buttonVariants } from "../../../ui/button";
 import { navData } from "@/lib/data";
 import Link from "next/link";
 
