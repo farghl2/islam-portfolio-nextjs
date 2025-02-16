@@ -16,7 +16,7 @@ function Header() {
 
 
   return (
-    <header className="rounded-[20px] bg-primary w-[100%] h-[46px] sm:h-[54px] ">
+    <header className="rounded-[20px] bg-primary w-[100%] h-[46px] sm:h-[54px]  sticky top-0 z-50">
       <div className="w-11/12 lg:w-10/12 h-full mx-auto flex justify-between items-center">
         <Link
         
