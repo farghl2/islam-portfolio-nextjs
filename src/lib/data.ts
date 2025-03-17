@@ -4,7 +4,7 @@ export const navData =[
     {title:'Home', url:'/', icon: House },
     {title:'Services', url:'#Services',icon:ServerCog },
     {title:'About', url:'#About', icon:Info },
-    {title:'Projects', url:'/projects', icon: FolderGit },
+    {title:'Projects', url:'#Projects', icon: FolderGit },
 ]
 
 export const carsoulData = [

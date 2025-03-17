@@ -2,6 +2,7 @@ import Hero from "@/components/custom/large/hero/hero";
 import LineCarsoul from "@/components/custom/atoms/lineCarsoul/LineCarsoul";
 import Services from "@/components/custom/large/services/Services";
 import About from "@/components/custom/large/about/About";
+import Portfolio from "@/components/custom/large/portfolio/Portfolio";
 
 
 export default function Home() {
@@ -18,6 +19,9 @@ export default function Home() {
       </div>
       <div id="About">
         <About />
+      </div>
+      <div id="Projects">
+        <Portfolio />
       </div>
     </>
   );
