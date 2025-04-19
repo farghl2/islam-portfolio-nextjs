@@ -1,24 +1,37 @@
+'use client';
 import React from 'react'
 import CustomButton from '../../atoms/CustomButton/customButton'
-import { Minus } from 'lucide-react';
-import ProjectCard from '../../atoms/projectCard/ProjectCard';
+import ProjectCard from '../../../../app/projects/projectCard/ProjectCard';
+import SectionHeader from '../../atoms/sectionHeader/SectionHeader';
+import { useRouter } from 'next/navigation';
+import { projectsData } from '@/lib/data';
 
 const Portfolio = () => {
+  const router = useRouter();
   return (
     <section className='my-4   sm:my-12 mx-auto w-11/12'>
       <div className='flex flex-col sm:flex-row gap-7 sm justify-between items-center'>
         <div>
-          <h3 className='flex justify-center sm:justify-start items-center gap-1 text-xl sm:text-3xl font-bold'> <Minus className='text-xl text-secondary mr-3'/>MY  Portfolio </h3>
-          <p className='text-3xl sm:text-4xl mt-1'>My Latest <span className='text-secondary'>
+      <SectionHeader title='MY  Portfolio'>
+      My Latest <span className='text-secondary'>
             
             Projects
             </span> 
-            </p>
+      </SectionHeader>
+          
+          
         </div>
-        <CustomButton title='View All Projects' styles='lg:mr-[10rem]'/>
+        <CustomButton title='View All Projects' styles='lg:mr-[10rem]' 
+        onClick={()=>router.push('/projects')}
+        />
       </div>
-        <div className='mt-5'>
-          <ProjectCard />
+        <div className='mt-5 flex flex-col gap-3 justify-center items-center'>
+          {projectsData.slice(0,2).map((project)=><ProjectCard 
+          key={project.link}
+          project={project}
+
+          />)}
+          
         </div>
           
     </section>

@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/custom/large/header/Header";
 
+
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta-sans",
   subsets: ['latin'],
@@ -26,7 +27,9 @@ export default function RootLayout({
         className={`${cn(`${plusJakarta.variable} antialiased overflow-x-hidden`)}`}
       >
         <Header />
+
         {children}
+        
       </body>
     </html>
   );
