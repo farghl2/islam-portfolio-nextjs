@@ -6,7 +6,7 @@ import { Button } from "../../../ui/button";
 import { callMeData, navData } from "@/lib/data";
 
 
-import "./header.module.css";
+
 import MobileSidbar from "./MobileSidbar";
 
 
@@ -29,9 +29,11 @@ function Header() {
 
         <MobileSidbar />
         <nav className="hidden sm:flex justify-between items-center gap-7">
-          <ul className="ul flex justify-center items-center gap-4">
+          <ul className=" flex justify-center items-center gap-4">
             {navData.map((item) => (
-              <li className="relative" key={item.title}>
+              <li className={`relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 
+              before:bg-secondary before:transition-all hover:before:w-full
+              `} key={item.title}>
                 <Link
                   className=" text-white text-[1.01rem] hover:text-secondary  transition-all"
                   href={item.url}

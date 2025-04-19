@@ -12,7 +12,9 @@ const LineCarsoul = () => {
       
       {val} 
       </span>
-      <Star /></p>)} 
+
+      
+         <Star className='mx-2'/> </p>)} 
 
         </div>
         

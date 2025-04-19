@@ -1,6 +1,5 @@
 'use client'
 import Image from "next/image";
-import "./hero.module.css";
 import CustomButton from "../../atoms/CustomButton/customButton";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -19,8 +18,8 @@ const Hero = () => {
           width={130}
           height={130}
         />
-        <h2 className="h2 font-semibold text-2xl sm:text-3xl lg:text-4xl text-center sm:text-start sm:w-9/12 mt-8">
-          I’m <span className="relative  text-secondary">Islam Farghl</span>
+        <h2 className={`font-semibold text-2xl sm:text-3xl lg:text-4xl text-center sm:text-start sm:w-9/12 mt-8`}>
+          I’m <span className=" relative underline text-secondary">Islam Farghl</span>
           <br /> Front-End developer Based in Eygpt{" "}
           <strong className="text-secondary text-xl">.</strong>
         </h2>

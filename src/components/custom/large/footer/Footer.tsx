@@ -30,6 +30,7 @@ const Footer = () => {
                 <Link
                   key={item.link}
                   href={item.link}
+                  target="_blank"
                   className="text-3xl p-4 bg-slate-200 rounded-full"
                 >
                   {<item.icon />}
@@ -41,7 +42,7 @@ const Footer = () => {
             <h4 className="text-xl">Navigation</h4>
             <div className="flex flex-wrap md:flex-col ">
               {navData.map((item) => (
-                <Link href={item.url} key={item.url}
+                <Link href={item.url}  key={item.url}
                 className="flex p-2 items-center justify-start gap-4"
                 >
                     {<item.icon />}
@@ -54,7 +55,7 @@ const Footer = () => {
             <h4 className="text-xl">Contact</h4>
             <div className="flex flex-wrap md:flex-col ">
               {contactMeData.map((item) => (
-                <Link href={item.link} key={item.link}
+                <Link href={item.link} target="_blank" key={item.link}
                 className="flex p-2 items-center justify-start gap-4"
                 >
                     <item.icon />
