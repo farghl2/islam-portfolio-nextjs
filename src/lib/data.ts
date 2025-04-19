@@ -29,7 +29,7 @@ export const projectsData: Project[] = [
 ]
 
 export const toolsData =[
-    {img:'/tools-images/nextjs.png',title:'Next.js'},
+    {img:'/tools-images/nextjslogo.png',title:'Next.js'},
     {img:'/tools-images/reactjs.png',title:'React.js'},
     {img:'/tools-images/Redux.png',title:'Redux.js'},
     {img:'/tools-images/typescript.png',title:'Js/Ts'},
