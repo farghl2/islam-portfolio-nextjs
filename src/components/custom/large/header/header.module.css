@@ -1,5 +1,5 @@
 
-.ul li::before {
+ul li::before {
     content: '';
     position: absolute;
      bottom: 0; 
@@ -10,7 +10,7 @@
     transition: width 0.3s ease; 
     
 }
-.ul li:hover::before{
+ul li:hover::before{
     width: 80%;
 }
 
