@@ -29,7 +29,7 @@ function Header() {
 
         <MobileSidbar />
         <nav className="hidden sm:flex justify-between items-center gap-7">
-          <ul className=" flex justify-center items-center gap-4">
+          <ul className="ul flex justify-center items-center gap-4">
             {navData.map((item) => (
               <li className="relative" key={item.title}>
                 <Link

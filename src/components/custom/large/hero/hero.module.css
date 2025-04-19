@@ -1,6 +1,6 @@
 
 
-h2 > span::before {
+.h2> span::before {
     content: '';
     position: absolute;
      bottom: 0; 
