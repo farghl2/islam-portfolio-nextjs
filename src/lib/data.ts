@@ -23,6 +23,7 @@ export const servicesData: Service[] =[
 ]
 
 export const projectsData: Project[] = [
+    {img: '/projects/03.png', title:'Ramsa - E-commerce', description:' هو متجرالكتروني متخصص في بيع القهوة وادواتها', link:'https://ramsa.vercel.app/' , tools:['Next.js','React.js','TS','Chadcn/ui' ,'html', 'css', 'tailwindCss']},
     {img: '/projects/01.svg', title:'Layal - E-commerce', description:'layal هو متجرالكتروني متخصص في بيع الطرح', link:'https://www.layal-shop.com' , tools:['React.js','TS' ,'html', 'css', 'tailwindCss','MUI', 'firebase']},
     {img: '/projects/02.jpeg', title:'Sakank - Real E-state', description:'هو موقع يخدم الطلبة بشكل اساسي في ايجاد سكن لهم بعيدا" عن النصب والاحتيال  في عملية تنظمية كاملة',link:'https://www.sakank.shop', tools:['React.js', 'Redux.js','TS' ,'html', 'css', 'tailwindCss', 'MUI', 'firebase']},
    
