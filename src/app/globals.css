@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 
-:root {
-  --first-color:  #344c36;
-  --second-color:  #faad1b;
-}
+
 
 html{
   scroll-behavior: smooth;
@@ -50,10 +47,10 @@ body {
     --radius:  0.5rem;
   }
   .dark {
-    --background:  240 10% 3.9%;
-    --foreground:  0 0% 98%;
-    --card:  240 10% 3.9%;
-    --card-foreground:  0 0% 98%;
+    --background: #0e1a0f;
+    --foreground:  #0e1a0f;
+    --card: #0e1a0f ;
+    --card-foreground:  #0e1a0f;
     --popover:  240 10% 3.9%;
     --popover-foreground:  0 0% 98%;
     --primary:  0 0% 98%;

@@ -2,6 +2,9 @@ import React from 'react'
 import SectionHeader from '../../atoms/sectionHeader/SectionHeader'
 import { servicesData } from '@/lib/data'
 import ServiceCard from './ServiceCard'
+import { Fade } from 'react-awesome-reveal'
+
+
 
 function Services() {
   return (
@@ -12,11 +15,22 @@ function Services() {
           </span> 
           I Provide
         </SectionHeader>
+
+        <Fade triggerOnce direction='left'>
         <div className='flex flex-wrap gap-3 justify-center my-5 sm:my-8'> 
-            {servicesData.map((service)=><ServiceCard service={service} key={service.title} 
+            {servicesData.map((service)=>
+ 
+
+
+            <ServiceCard service={service} key={service.title} 
             
-            />)}
+            />
+   
+
+            
+          )}
         </div>
+        </Fade>
     </section>
   )
 }

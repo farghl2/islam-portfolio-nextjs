@@ -6,6 +6,7 @@ import SectionHeader from '../../atoms/sectionHeader/SectionHeader';
 import { useRouter } from 'next/navigation';
 import { projectsData } from '@/lib/data';
 
+
 const Portfolio = () => {
   const router = useRouter();
   return (
@@ -26,11 +27,17 @@ const Portfolio = () => {
         />
       </div>
         <div className='mt-5 flex flex-col gap-3 justify-center items-center'>
-          {projectsData.slice(0,2).map((project)=><ProjectCard 
+          {projectsData.slice(0,2).map((project)=>
+          // <Fade key={project.link}  direction='left'>
+            
+          <ProjectCard 
           key={project.link}
           project={project}
 
-          />)}
+          />
+          
+      
+          )}
           
         </div>
           

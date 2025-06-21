@@ -1,3 +1,4 @@
+
 import {
   Sheet,
   SheetClose,
@@ -5,18 +6,20 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { AlignJustify } from "lucide-react";
-import { buttonVariants } from "../../../ui/button";
+import {  buttonVariants } from "../../../ui/button";
 import { navData } from "@/lib/data";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-
+// import { Contrast, Moon, Sun } from "lucide-react";
+// import { useTheme } from "next-themes";
 const MobileSidbar = () => {
+  // const {setTheme, theme} = useTheme()
   return (
-    <Sheet>
+    <Sheet >
       <SheetTrigger>
         <AlignJustify className={`text-white block sm:hidden rounded-md`} />
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent >
         
         <ul className=" flex flex-col justify-center items-center gap-6 pt-16">
           {navData.map((item) => (
@@ -37,6 +40,11 @@ const MobileSidbar = () => {
               </SheetClose>
             </li>
           ))}
+          {/* <li><Button variant={'outline'} className="shadow-none" onClick={()=>theme === 'light'?setTheme('dark'):setTheme('light')}>
+            {theme === 'dark'&& <Sun/>}
+           {theme === 'light'&& <Moon />}
+           {theme === 'system'&& <Contrast/>}
+          </Button></li> */}
         </ul>
       </SheetContent>
     </Sheet>

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section>
+    <section className="pt-8">
       <div className="w-11/12 mx-auto">
         <div className="flex flex-wrap gap-5 mb-5 items-center justify-between">
           <h4 className="text-3xl">Let’s Connect There</h4>
@@ -33,7 +33,7 @@ const Footer = () => {
                   target="_blank"
                   className="text-3xl p-4 bg-slate-200 rounded-full"
                 >
-                  {<item.icon />}
+                  {<item.icon className="text-black"/>}
                 </Link>
               ))}
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                 <Link href={item.link} target="_blank" key={item.link}
                 className="flex p-2 items-center justify-start gap-4"
                 >
-                    <item.icon />
+                    <item.icon className="text-2xl"/>
                   {item.title}
                 </Link>
               ))}

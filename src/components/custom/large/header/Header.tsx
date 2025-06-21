@@ -4,15 +4,16 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "../../../ui/button";
 import { callMeData, navData } from "@/lib/data";
-
+// import { useTheme } from "next-themes";
+// import { Contrast, Moon, Sun } from "lucide-react";
 
 
 import MobileSidbar from "./MobileSidbar";
 
 
 
-
 function Header() {
+  // const {setTheme, theme} = useTheme()
 
 
   return (
@@ -28,7 +29,7 @@ function Header() {
         </Link>
 
         <MobileSidbar />
-        <nav className="hidden sm:flex justify-between items-center gap-7">
+        <nav className="hidden sm:flex justify-between items-center gap-4">
           <ul className=" flex justify-center items-center gap-4">
             {navData.map((item) => (
               <li className={`relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 
@@ -51,6 +52,13 @@ function Header() {
             Contact Me
             </Link> 
           </Button>
+         {/* <div className="w-[1px] h-6 rounded-xl bg-white "/>
+          <Button  className="shadow-none" onClick={()=>theme === 'light'?setTheme('dark'):setTheme('light')}>
+            {theme === 'dark'&& <Sun className="text-white"/>}
+           {theme === 'light'&& <Moon className="text-white"/>}
+           {theme === 'system'&& <Contrast className="text-white"/>}
+          </Button> */}
+
         </nav>
       </div>
     </header>

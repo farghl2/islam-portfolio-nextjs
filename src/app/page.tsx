@@ -4,22 +4,25 @@ import Services from "@/components/custom/large/services/Services";
 import About from "@/components/custom/large/about/About";
 import Portfolio from "@/components/custom/large/portfolio/Portfolio";
 import { Tools } from "@/components/custom/large/Tools/Tools";
-import ContactMe from "@/components/custom/large/contactMe/ContactMe";
+// import ContactMe from "@/components/custom/large/contactMe/ContactMe";
 import Footer from "@/components/custom/large/footer/Footer";
 
-import { Fade } from "react-awesome-reveal";
+
 
 import React from 'react'
 
+
 const Home = async() => {
   await new Promise((resolve) => {
-    setTimeout(()=>resolve('sdfsfd'), 2000)
+    setTimeout(()=>resolve('sdfsfd'), 200)
   })
   return (
     
-    <Fade direction="left"  duration={500} triggerOnce={true}>
+   
 
+    <>
     
+   
       <Hero />
       <div className="relative mb-[20px] sm:mb-[70px]">
         <LineCarsoul />
@@ -35,12 +38,15 @@ const Home = async() => {
       <div id="Projects">
         <Portfolio />
       </div>
+ 
+
       <Tools />
-      <ContactMe />
-      <LineCarsoul />
+     
+      {/* <ContactMe /> */}
+      {/* <LineCarsoul /> */}
       <Footer />
-    </Fade >
-   
+      </>
+ 
   )
 }
 

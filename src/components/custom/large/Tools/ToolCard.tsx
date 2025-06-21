@@ -16,7 +16,7 @@ export const Tool = ({title, img}:ToolProps) => {
         src={img}
         className="rounded-full"
       />
-      <h5 className="font-semibold text-2xl mb-4 ">{title}</h5>
+      <h5 className="font-semibold text-2xl mb-4 dark:text-black">{title}</h5>
     </Card>
   );
 };
