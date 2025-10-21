@@ -7,7 +7,7 @@ import CustomButton from "../../atoms/CustomButton/customButton";
 import SectionHeader from "../../atoms/sectionHeader/SectionHeader";
 import { Fade } from "react-awesome-reveal";
 
-const descrition = `A front end developer with 1+ year of experience in freelance work`;
+const descrition = `A Fullstack developer with 1+ year of experience in freelance work`;
 export default function About() {
   return (
     <section className="bg-primary min-h-[300px] px-2 py-8 sm:py-20">

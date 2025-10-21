@@ -30,10 +30,15 @@ export const projectsData: Project[] = [
 ]
 
 export const toolsData =[
+    {img:'/tools-images/laravel.png',title:'Laravel'},
     {img:'/tools-images/nextjslogo.png',title:'Next.js'},
     {img:'/tools-images/reactjs.png',title:'React.js'},
+    {img:'/tools-images/zustand.jpeg',title:'Zustand'},
     {img:'/tools-images/Redux.png',title:'Redux.js'},
+    {img:'/tools-images/php.png',title:'PHP'},
     {img:'/tools-images/typescript.png',title:'Js/Ts'},
+    {img:'/tools-images/mysql.png',title:'MySQL'},
+    {img:'/tools-images/postgresql.png',title:'PostgreSQL'},
     {img:'/tools-images/html.png',title:'HTML'},
     {img:'/tools-images/css.png',title:'CSS'},
     {img:'/tools-images/Tailwind.png',title:`Tailwind`},

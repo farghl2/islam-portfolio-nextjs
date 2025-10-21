@@ -8,7 +8,7 @@ type ToolProps = {
 export const Tool = ({title, img}:ToolProps) => {
   return (
     <Card className={`${cn(`bg-slate-50 hover:bg-slate-200 transition
-     rounded-full min-w-[8.75rem] lg:w-[13%]  flex items-center justify-center flex-col gap-11 py-4`)}`}>
+     rounded-full min-w-[8.4rem] lg:w-[13%]  flex items-center justify-center flex-col gap-11 py-4`)}`}>
       <Image
         alt="tool logo"
         height={62}
@@ -16,7 +16,7 @@ export const Tool = ({title, img}:ToolProps) => {
         src={img}
         className="rounded-full"
       />
-      <h5 className="font-semibold text-2xl mb-4 dark:text-black">{title}</h5>
+      <h5 className="font-semibold text-xl sm:text-2xl mb-4 dark:text-black">{title}</h5>
     </Card>
   );
 };

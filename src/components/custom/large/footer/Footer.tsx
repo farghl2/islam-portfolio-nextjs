@@ -23,7 +23,7 @@ const Footer = () => {
               Islam
             </Link>
             <p className="text-xl p-4 ">
-              I’m a front-end developer <br className="hidden md:block"/> special in Nextjs frame work
+              I’m a Fullstack developer <br className="hidden md:block"/> special in Laravel & Nextjs frame works
             </p>
             <div className="flex justify-center items-center gap-3">
               {socialData.map((item) => (

@@ -33,15 +33,15 @@ const Hero = () => {
 
         <h2 className={`font-semibold text-2xl sm:text-3xl lg:text-4xl text-center sm:text-start sm:w-9/12 mt-8`}>
           I’m <span className=" relative underline text-secondary">Islam Farghl</span>
-          <br /> Front-End developer Based in Eygpt{" "}
+          <br /> Fullstack developer Based in Eygpt{" "}
           <strong className="text-secondary text-xl">.</strong>
         </h2>
         </Fade>
         <Fade cascade direction="up">
           
         <p className="text-2xl  text-center sm:text-start  sm:text-3xl pt-8 sm:w-10/12">
-          I’m a front-end developer <b />
-          special in Nextjs frame work
+          I’m a Fullstack developer <b />
+          special in Laravel & Nextjs frame works
         </p>
         </Fade>
         <div className="flex items-center justify-start mx-auto gap-2 sm:gap-7 mt-8">

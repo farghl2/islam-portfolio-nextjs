@@ -13,7 +13,7 @@ export const Tools = () => {
 
         </SectionHeader>
      
-      <div className='flex flex-wrap gap-3 justify-center my-5 sm:my-8 '>
+      <div className='flex flex-wrap gap-2 sm:gap-3 justify-center my-5 sm:my-8 '>
         {toolsData.map((tool)=><Tool img={tool.img} title={tool.title} key={tool.title} />)}
         
       </div>
