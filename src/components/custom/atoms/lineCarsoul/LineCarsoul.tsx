@@ -1,24 +1,29 @@
+'use client'
+import React from 'react'
+import { motion } from 'motion/react'
 import { carsoulData } from '@/lib/data'
-import styles from './lineCarsoul.module.css';
-import { Star } from 'lucide-react';
 
-const LineCarsoul = () => {
+function LineCarsoul() {
   return (
-    <section className='overflow-hidden w-full h-[50px] sm:h-[70px] bg-secondary my-8 py-4'>
-        <div  className={`${styles.line} text-l sm:text-2xl font-semibold`}>
-     {carsoulData.map((val)=><p
-      className=' w-full flex  items-center justify-evenly'
-     key={val}><span>
-      
-      {val} 
-      </span>
-
-      
-         <Star className='mx-2'/> </p>)} 
-
-        </div>
-        
-    </section>
+    <div className='w-full overflow-hidden py-10 sm:py-20 bg-background'>
+        <motion.div 
+          className='flex items-center gap-8 sm:gap-12 whitespace-nowrap'
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            repeat: Infinity,
+            duration: 20,
+            ease: "linear"
+          }}
+        >
+          {[...carsoulData, ...carsoulData, ...carsoulData].map((item, index) => (
+            <div key={index} className='px-8 py-4 sm:px-12 sm:py-6 rounded-full border border-primary/20 bg-primary/5 dark:bg-primary/10 backdrop-blur-md flex items-center justify-center group hover:border-primary transition-all duration-300'>
+              <span className='text-xl sm:text-3xl font-black bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary'>
+                 {item}
+              </span>
+            </div>
+          ))}
+        </motion.div>
+    </div>
   )
 }
 

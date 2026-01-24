@@ -1,8 +1,9 @@
+'use client';
 import React from 'react'
 import SectionHeader from '../../atoms/sectionHeader/SectionHeader'
 import { servicesData } from '@/lib/data'
 import ServiceCard from './ServiceCard'
-import { Fade } from 'react-awesome-reveal'
+
 
 
 
@@ -16,21 +17,11 @@ function Services() {
           I Provide
         </SectionHeader>
 
-        <Fade triggerOnce direction='left'>
-        <div className='flex flex-wrap gap-3 justify-center my-5 sm:my-8'> 
-            {servicesData.map((service)=>
- 
-
-
-            <ServiceCard service={service} key={service.title} 
-            
-            />
-   
-
-            
-          )}
+        <div className='flex flex-wrap gap-6 justify-center my-8 sm:my-16'> 
+            {servicesData.map((service, index)=>
+            <ServiceCard service={service} key={service.title} index={index} />
+           )}
         </div>
-        </Fade>
     </section>
   )
 }

@@ -1,74 +1,151 @@
 'use client'
+import React from 'react';
 import Image from "next/image";
 import CustomButton from "../../atoms/CustomButton/customButton";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { callMeData} from "@/lib/data";
-import { Fade } from "react-awesome-reveal";
-
+import { callMeData } from "@/lib/data";
+import { motion } from "motion/react";
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
-  const router= useRouter()
+  const router = useRouter();
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring" as const,
+        stiffness: 100,
+        damping: 10,
+      },
+    },
+  };
+
   return (
-    <section className="flex flex-col-reverse sm:flex-row justify-evenly items-center   w-11/12 lg:w-10/12 mx-auto py-8">
-      <div className="flex flex-col gap-2">
-        <Fade cascade damping={0}>
-
-        <Image
-          className="hidden sm:block dark:hidden -rotate-3"
-          src={"hero-hello.svg"}
-          alt="hero-hello"
-          width={130}
-          height={130}
-        />
-        <Image
-          className="hidden dark:sm:block -rotate-3"
-          src={"hero-hello-dark.svg"}
-          alt="hero-hello"
-          width={130}
-          height={130}
-        />
-          </Fade>
-        <Fade cascade direction="down">
-
-        <h2 className={`font-semibold text-2xl sm:text-3xl lg:text-4xl text-center sm:text-start sm:w-9/12 mt-8`}>
-          I’m <span className=" relative underline text-secondary">Islam Farghl</span>
-          <br /> Fullstack developer Based in Eygpt{" "}
-          <strong className="text-secondary text-xl">.</strong>
-        </h2>
-        </Fade>
-        <Fade cascade direction="up">
-          
-        <p className="text-2xl  text-center sm:text-start  sm:text-3xl pt-8 sm:w-10/12">
-          I’m a Fullstack developer <b />
-          special in Laravel & Nextjs frame works
-        </p>
-        </Fade>
-        <div className="flex items-center justify-start mx-auto gap-2 sm:gap-7 mt-8">
-       
-          <CustomButton title="View my portfolio" 
-          onClick={()=>router.push('/projects')}
-          />
-         
-          <Fade damping={0} cascade>
-
-          <button 
-          
-          className={`animate-wiggle text-[1.2rem] border-[3px] w-[6rem] h-11 rounded-2xl border-primary font-semibold transition-opacity hover:bg-slate-200 backdrop-blur-md`}
-          >
-            <Link href={callMeData}
-            target="_blank"
-            >
-            
-            Hire Me
-            </Link>
-          </button>
-            </Fade>
-        </div>
+    <section className="relative w-full overflow-hidden min-h-[calc(100vh-80px)] flex items-center justify-center py-12 sm:py-20 lg:py-0">
+      {/* Background Gradients */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] opacity-30 animate-pulse" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-secondary/20 rounded-full blur-[120px] opacity-30" />
       </div>
-      <Fade cascade damping={0} direction="down">
-        <Image src={"/islam.png"} className="rounded-full animate-out" alt="hero image" width={450} height={450} />
-      </Fade>
+
+      <div className="w-11/12 lg:w-10/12 mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-8">
+        
+        {/* Text Content */}
+        <motion.div 
+          className="flex flex-col gap-6 lg:w-1/2 z-10"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.div variants={itemVariants} className="flex items-center gap-2">
+            <span className="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-sm font-medium border border-secondary/20 block w-fit">
+              Available for Freelance
+            </span>
+          </motion.div>
+
+          <motion.h2 variants={itemVariants} className="font-bold text-4xl sm:text-5xl lg:text-7xl leading-tight text-center lg:text-start">
+            Hello, I’m <br/>
+            <span className="text-secondary relative inline-block">
+              Islam Farghl
+              <svg className="absolute w-full h-3 -bottom-1 left-0 text-secondary opacity-40" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00025 6.99997C2.00025 6.99997 127.352 2.65163 194.208 2.05353" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/></svg>
+            </span>
+          </motion.h2>
+
+          <motion.div variants={itemVariants} className="text-lg sm:text-xl text-muted-foreground text-center lg:text-start max-w-xl h-[60px] sm:h-auto">
+             A creative <strong>Fullstack Developer</strong> specializing in{' '}
+             <span className="text-foreground font-semibold">
+               <Typewriter
+                 words={['Next.js', 'Nest.js', 'React', 'Modern Web Apps']}
+                 loop={0}
+                 cursor
+                 cursorStyle='_'
+                 typeSpeed={70}
+                 deleteSpeed={50}
+                 delaySpeed={1000}
+               />
+             </span>
+          </motion.div>
+          
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-4">
+            <CustomButton 
+              title="View Projects" 
+              onClick={() => router.push('/projects')}
+              styles="shadow-lg hover:shadow-xl transition-shadow"
+            />
+            
+            <Link href={callMeData} target="_blank" className="group flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-background hover:bg-secondary/10 hover:border-secondary/50 transition-all duration-300 font-medium">
+              Hire Me <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="flex items-center justify-center lg:justify-start gap-4 mt-4 opacity-80">
+             <span className="text-sm text-muted-foreground mr-2">Find me on:</span>
+             <Link href="https://github.com/farghl2" target="_blank" className="hover:text-primary transition-colors hover:scale-110 transform"><Github className="w-5 h-5"/></Link>
+             <Link href="https://linkedin.com/in/farghl2" target="_blank" className="hover:text-primary transition-colors hover:scale-110 transform"><Linkedin className="w-5 h-5"/></Link>
+             <Link href="mailto:islamfarghl2020@gmail.com" className="hover:text-primary transition-colors hover:scale-110 transform"><Mail className="w-5 h-5"/></Link>
+          </motion.div>
+
+        </motion.div>
+
+        {/* Hero Image */}
+        <motion.div 
+          className="lg:w-1/2 flex justify-center relative"
+          initial={{ opacity: 0, scale: 0.8, x: 100 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <div className="relative w-[320px] h-[320px] sm:w-[450px] sm:h-[450px] lg:w-[500px] lg:h-[500px]">
+            {/* Organic blobs behind image */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-gradient-to-tr from-primary/30 to-secondary/30 rounded-full blur-3xl animate-pulse -z-10" />
+            
+            <div className="relative w-full h-full rounded-[2rem] overflow-hidden border-4 border-white/20 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 ease-out glass group">
+              <Image 
+                src={"/islam.png"} 
+                className="object-cover w-full h-full bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-800 dark:to-slate-900 group-hover:scale-105 transition-transform duration-700" 
+                alt="Islam Farghl" 
+                width={500} 
+                height={500} 
+                priority
+              />
+            </div>
+
+            {/* Floating Elements */}
+            <motion.div 
+              animate={{ y: [0, -20, 0] }}
+              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+              className="absolute -top-6 -right-6 md:top-10 md:-right-10 bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-xl border border-border"
+            >
+              <Image src="/tools-images/nextjslogo.png" width={40} height={40} alt="Next.js" className="w-10 h-10 object-contain" />
+            </motion.div>
+            
+             <motion.div 
+              animate={{ y: [0, 20, 0] }}
+              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut", delay: 1 }}
+              className="absolute bottom-10 -left-6 md:bottom-20 md:-left-12 bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-xl border border-border"
+            >
+               <Image src="/tools-images/nestjs.png" width={40} height={40} alt="Nest.js" className="w-10 h-10 object-contain" />
+            </motion.div>
+
+          </div>
+        </motion.div>
+
+      </div>
     </section>
   );
 };

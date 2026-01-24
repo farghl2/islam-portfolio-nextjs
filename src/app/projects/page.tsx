@@ -14,11 +14,11 @@ const Projects = () => {
               Projects
               </span> 
         </SectionHeader>
-        <div className='mt-5 flex flex-col gap-3 justify-center items-center'>
-        {projectsData.map((project)=><ProjectCard 
+        <div className='mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto'>
+        {projectsData.map((project, index)=><ProjectCard 
           key={project.link}
           project={project}
-
+          index={index}
           />)}
           
         </div>

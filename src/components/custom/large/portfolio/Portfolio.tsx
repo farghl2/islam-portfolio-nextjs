@@ -26,19 +26,14 @@ const Portfolio = () => {
         onClick={()=>router.push('/projects')}
         />
       </div>
-        <div className='mt-5 flex flex-col gap-3 justify-center items-center'>
-          {projectsData.slice(0,2).map((project)=>
-          // <Fade key={project.link}  direction='left'>
-            
+        <div className='mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto'>
+          {projectsData.slice(0,4).map((project, index)=>
           <ProjectCard 
-          key={project.link}
-          project={project}
-
+            key={project.link}
+            project={project}
+            index={index}
           />
-          
-      
           )}
-          
         </div>
           
     </section>

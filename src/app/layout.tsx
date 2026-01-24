@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans} from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/custom/large/header/Header";
 import { ThemeProvider } from "@/components/theme-provider";
+import BackgroundMusic from "@/components/custom/atoms/BackgroundMusic/BackgroundMusic";
 
 
-const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta-sans",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ['latin'],
 });
 
 
 export const metadata: Metadata = {
   title: "Islam Farghl",
-  description: "I’m a front-end developer special in Nextjs frame work",
+  description: "I’m a full stack developer special in Nextjs frame work",
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${cn(`${plusJakarta.variable} antialiased overflow-x-hidden`)}`}
+        className={`${cn(`${outfit.variable} antialiased overflow-x-hidden`)}`}
       >
         <ThemeProvider
             attribute="class"
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Header />
 
         {children}
+        <BackgroundMusic />
           </ThemeProvider>
         
       </body>

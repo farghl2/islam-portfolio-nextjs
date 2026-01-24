@@ -1,33 +1,60 @@
+'use client'
 import { Card } from '@/components/ui/card'
 import { Service } from '@/lib/types'
 import { cn } from '@/lib/utils'
 import React from 'react'
-
-
-
+import { motion } from 'motion/react'
 
 type ServiceCardProps ={
   service: Service;
+  index: number;
 }
-function ServiceCard({service}:ServiceCardProps) {
+
+function ServiceCard({service, index}:ServiceCardProps) {
   const {title, description}= service
-  return (
- 
-
-    <Card className={`${cn(`hover:translate-y-1 transition-transform dark:bg-background shadow-lg bg-[#F8F8F8] rounded-full min-w-[16.75rem]  w-1/12 
-    flex flex-col items-center justify-evenly min-h-[25rem]  backdrop-blur-md p-3`)}`} >
-
-          {< service.icon className='block mb-4 size-20 rounded-full text-secondary'  />} 
-        
-        
-        <h4 className='text-2xl font-semibold capitalize'>{title}</h4>
-
-        <p className='text-xl tracking-wide  break-words text-center text-muted-foreground px-4 mb-5'>{description}</p>
-
-        
-      
   
-    </Card>
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.1 }}
+      whileHover={{ y: -5 }}
+    >
+      <Card className={`${cn(`
+        relative overflow-hidden
+        dark:bg-white/5 bg-white/70 
+        backdrop-blur-xl border border-white/20 dark:border-white/10
+        rounded-3xl 
+        w-full sm:w-[20rem]
+        flex flex-col items-center justify-between
+        min-h-[22rem] p-6
+        transition-all duration-300
+        hover:shadow-2xl hover:shadow-primary/10
+        group
+      `)}`} >
+        
+        {/* Gradient Blob Background */}
+        <div className="absolute -top-10 -right-10 w-32 h-32 bg-secondary/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500" />
+        <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500 delay-100" />
+
+        <div className='relative z-10 flex flex-col items-center flex-grow'>
+          <div className="p-4 rounded-2xl bg-gradient-to-br from-white/50 to-white/10 dark:from-white/10 dark:to-transparent border border-white/20 mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
+            <service.icon className='size-10 text-primary group-hover:text-secondary transition-colors duration-300' />
+          </div>
+          
+          <h4 className='text-2xl font-bold capitalize mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary'>
+            {title}
+          </h4>
+
+          <p className='text-muted-foreground text-center leading-relaxed'>
+            {description}
+          </p>
+        </div>
+
+        <div className="w-full h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent mt-6 group-hover:via-secondary/50 transition-all duration-500" />
+      </Card>
+    </motion.div>
   )
 }
 

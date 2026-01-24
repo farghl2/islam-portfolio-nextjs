@@ -1,52 +1,35 @@
+import React from 'react'
 import Hero from "@/components/custom/large/hero/hero";
 import LineCarsoul from "@/components/custom/atoms/lineCarsoul/LineCarsoul";
 import Services from "@/components/custom/large/services/Services";
 import About from "@/components/custom/large/about/About";
 import Portfolio from "@/components/custom/large/portfolio/Portfolio";
-import { Tools } from "@/components/custom/large/Tools/Tools";
-// import ContactMe from "@/components/custom/large/contactMe/ContactMe";
+import Tools from "@/components/custom/large/Tools/Tools";
 import Footer from "@/components/custom/large/footer/Footer";
 
-
-
-import React from 'react'
-
-
 const Home = async() => {
-  await new Promise((resolve) => {
-    setTimeout(()=>resolve('sdfsfd'), 200)
-  })
   return (
-    
-   
-
-    <>
-    
-   
+    <main className="overflow-x-hidden">
       <Hero />
-      <div className="relative mb-[20px] sm:mb-[70px]">
-        <LineCarsoul />
-        <div className="w-full h-[60px] sm:h-[70px] bg-primary absolute -top-1 sm:top-0 transform -rotate-3 z-[-1]" />
-      </div> 
-      <div id="Services">
+      
+      <LineCarsoul />
 
-      <Services />
+      <div id="Services" className="relative z-10">
+        <Services />
       </div>
-      <div id="About">
+      
+      <div id="About" className="relative z-10">
         <About />
       </div>
-      <div id="Projects">
+      
+      <div id="Projects" className="relative z-10">
         <Portfolio />
       </div>
  
-
       <Tools />
      
-      {/* <ContactMe /> */}
-      {/* <LineCarsoul /> */}
       <Footer />
-      </>
- 
+    </main>
   )
 }
 

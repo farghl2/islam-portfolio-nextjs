@@ -23,6 +23,13 @@ export const servicesData: Service[] =[
 ]
 
 export const projectsData: Project[] = [
+    {
+  img: '/projects/nourborsa.jpg', 
+  title: 'NourBorsa - AI Stock Analysis', 
+  description: 'منصة ذكية متكاملة لتحليل وتدقيق الأسهم في البورصة، تعتمد على البرمجة الخاصة لتقديم تحليلات دقيقة وفلاتر شرعية مدعومة بالذكاء الاصطناعي.', 
+  link: 'https://nourborsa.com/', 
+  tools: ['Next.js', 'React.js', 'NestJS', 'TypeScript', 'Tailwind CSS', 'AI Integration', 'PostgreSQL']
+ },
     {img: '/projects/03.png', title:'Ramsa - E-commerce', description:' هو متجرالكتروني متخصص في بيع القهوة وادواتها', link:'https://ramsa.vercel.app/' , tools:['Next.js','React.js','TS','Chadcn/ui' ,'html', 'css', 'tailwindCss']},
     {img: '/projects/01.svg', title:'Layal - E-commerce', description:'layal هو متجرالكتروني متخصص في بيع الطرح', link:'https://www.layal-shop.com' , tools:['React.js','TS' ,'html', 'css', 'tailwindCss','MUI', 'firebase']},
     {img: '/projects/02.jpeg', title:'Sakank - Real E-state', description:'هو موقع يخدم الطلبة بشكل اساسي في ايجاد سكن لهم بعيدا" عن النصب والاحتيال  في عملية تنظمية كاملة',link:'https://www.sakank.shop', tools:['React.js', 'Redux.js','TS' ,'html', 'css', 'tailwindCss', 'MUI', 'firebase']},
@@ -30,12 +37,11 @@ export const projectsData: Project[] = [
 ]
 
 export const toolsData =[
-    {img:'/tools-images/laravel.png',title:'Laravel'},
+    {img:'/tools-images/nestjs.png',title:'Nest.js'},
     {img:'/tools-images/nextjslogo.png',title:'Next.js'},
     {img:'/tools-images/reactjs.png',title:'React.js'},
     {img:'/tools-images/zustand.jpeg',title:'Zustand'},
     {img:'/tools-images/Redux.png',title:'Redux.js'},
-    {img:'/tools-images/php.png',title:'PHP'},
     {img:'/tools-images/typescript.png',title:'Js/Ts'},
     {img:'/tools-images/mysql.png',title:'MySQL'},
     {img:'/tools-images/postgresql.png',title:'PostgreSQL'},

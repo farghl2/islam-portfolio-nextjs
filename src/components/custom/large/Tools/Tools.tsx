@@ -1,23 +1,35 @@
+'use client';
+import { toolsData } from '@/lib/data'
+import React from 'react'
+import SectionHeader from '../../atoms/sectionHeader/SectionHeader'
+import ToolCard from './ToolCard'
+import { motion } from 'motion/react'
 
-import { Tool } from './ToolCard';
-import SectionHeader from '../../atoms/sectionHeader/SectionHeader';
-import { toolsData } from '@/lib/data';
+function Tools() {
+    // Group tools by category logic could go here in future
+    
+    return (
+        <section id="Tools" className='w-11/12 max-w-7xl mx-auto py-16 sm:py-24'>
+            <SectionHeader title='Tech Stack'>
+                My <span className='text-secondary'>Arsenal</span>
+            </SectionHeader>
 
-export const Tools = () => {
-  return (
-    <section className="bg-primary min-h-[300px] px-2 py-8 sm:py-20">
-        <div className='w-11/12 mx-auto'>
-        <SectionHeader title='My Favorite Tools' styles='text-white'>
-        Exploring the tools 
-        Behind my work
+            <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className='grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-12'
+            >
+                {toolsData.map((tool, index) => (
+                    <ToolCard 
+                        key={tool.title} 
+                        tool={tool} 
+                        index={index}
+                    />
+                ))}
+            </motion.div>
+        </section>
+    )
+}
 
-        </SectionHeader>
-     
-      <div className='flex flex-wrap gap-2 sm:gap-3 justify-center my-5 sm:my-8 '>
-        {toolsData.map((tool)=><Tool img={tool.img} title={tool.title} key={tool.title} />)}
-        
-      </div>
-      </div>
-    </section>
-  );
-};
+export default Tools
