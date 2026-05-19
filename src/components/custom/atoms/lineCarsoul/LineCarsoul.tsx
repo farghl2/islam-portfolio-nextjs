@@ -6,6 +6,7 @@ import { carsoulData } from '@/lib/data'
 function LineCarsoul() {
   return (
     <div className='w-full overflow-hidden py-10 sm:py-20 bg-background'>
+      <div className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden'>
         <motion.div 
           className='flex items-center gap-8 sm:gap-12 whitespace-nowrap'
           animate={{ x: ["0%", "-50%"] }}
@@ -23,6 +24,7 @@ function LineCarsoul() {
             </div>
           ))}
         </motion.div>
+      </div>
     </div>
   )
 }

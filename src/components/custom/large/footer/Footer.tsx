@@ -15,7 +15,7 @@ const Footer = () => {
       {/* Background Glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
       
-      <div className="w-11/12 max-w-7xl mx-auto relative z-10">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Giant CTA Section */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 border-b border-white/10 pb-16 mb-16">
@@ -45,10 +45,7 @@ const Footer = () => {
             {/* Brand Column */}
             <div className="lg:col-span-4 space-y-8">
                 <Link href={'/'} className="inline-flex items-center gap-3">
-                    <div className="relative w-10 h-10 bg-white rounded-xl flex items-center justify-center">
-                         {/* Replace with actual logo logic if needed or just use current */}
-                         <Image width={28} height={28} alt="logo" src={"/logo.svg"} />
-                    </div>
+                   
                     <span className="text-2xl font-bold tracking-tight">Islam</span>
                 </Link>
                 <p className="text-slate-400 leading-relaxed">
@@ -101,7 +98,7 @@ const Footer = () => {
                     {contactMeData.map((item) => (
                         <li key={item.link}>
                             <Link href={item.link} target="_blank" className="flex items-start gap-4 group">
-                                <div className="p-2 bg-white/5 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                <div className="p-2 bg-white/5 rounded-lg  group-hover:bg-primary group-hover:text-white transition-colors">
                                     <item.icon size={18} />
                                 </div>
                                 <div>

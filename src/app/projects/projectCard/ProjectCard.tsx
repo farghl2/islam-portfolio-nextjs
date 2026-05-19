@@ -31,10 +31,10 @@ function ProjectCard({project, index}:ProjectCardProps) {
       className="w-full h-full"
     >
       <Link href={link} target="_blank">
-        <Card className="group h-full flex flex-col overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300">
+        <Card className="group h-full flex flex-col overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900/95 shadow-sm hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300">
           
           {/* Image Container */}
-          <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-800 border-b border-border/50">
+          <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-800 border-b border-border/50 dark:border-slate-700/80">
              <Image
               src={img}
               alt={title}
@@ -43,7 +43,7 @@ function ProjectCard({project, index}:ProjectCardProps) {
             />
             {/* View Button Overlay */}
             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <div className="px-6 py-2 bg-white/90 dark:bg-black/90 backdrop-blur rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+              <div className="px-6 py-2 bg-white/90 dark:bg-slate-950/90 backdrop-blur rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
                 View Project
               </div>
             </div>
@@ -53,7 +53,7 @@ function ProjectCard({project, index}:ProjectCardProps) {
           <div className="p-6 flex flex-col flex-grow gap-4">
             <div className="flex justify-between items-start">
                <div>
-                 <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors">
+                 <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-primary transition-colors">
                   {title}
                 </h2>
                 <div className="h-1 w-12 bg-primary rounded-full" />
@@ -67,7 +67,7 @@ function ProjectCard({project, index}:ProjectCardProps) {
 
             <div className="flex flex-wrap gap-2 mt-auto pt-4">
               {tools.slice(0, 4).map((tool)=> (
-                <span key={tool} className="px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                <span key={tool} className="px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider rounded-md bg-slate-100 dark:bg-slate-800/90 text-slate-600 dark:text-slate-200 border border-slate-200 dark:border-slate-600/80">
                   {tool}
                 </span>
               ))}
@@ -81,3 +81,4 @@ function ProjectCard({project, index}:ProjectCardProps) {
 }
 
 export default ProjectCard;
+

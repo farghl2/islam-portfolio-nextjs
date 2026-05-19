@@ -9,7 +9,7 @@ import ServiceCard from './ServiceCard'
 
 function Services() {
   return (
-    <section className='w-11/12 mx-auto'> 
+    <section className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'> 
         <SectionHeader title='Services'>
         <span  className='text-secondary mr-2'>
           Services 
@@ -17,7 +17,7 @@ function Services() {
           I Provide
         </SectionHeader>
 
-        <div className='flex flex-wrap gap-6 justify-center my-8 sm:my-16'> 
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-8 sm:my-16'> 
             {servicesData.map((service, index)=>
             <ServiceCard service={service} key={service.title} index={index} />
            )}

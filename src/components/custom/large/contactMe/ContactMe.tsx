@@ -3,7 +3,7 @@ import SectionHeader from "../../atoms/sectionHeader/SectionHeader";
 import Link from "next/link";
 
 const ContactMe = () => (
-  <section className="w-11/12 mx-auto">
+  <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <SectionHeader
       title="Contact Me"
     >

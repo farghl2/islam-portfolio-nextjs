@@ -5,7 +5,7 @@ import { projectsData } from '@/lib/data'
 
 const Projects = () => {
   return (
-  <section className='my-4   sm:my-12 mx-auto w-11/12'>
+  <section className='my-4 sm:my-12 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8'>
         
           
         <SectionHeader title='MY  Portfolio'>

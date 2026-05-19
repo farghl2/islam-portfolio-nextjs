@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from "@/components/custom/large/hero/hero";
+import Counter from "@/components/custom/large/counter/Counter";
 import LineCarsoul from "@/components/custom/atoms/lineCarsoul/LineCarsoul";
 import Services from "@/components/custom/large/services/Services";
 import About from "@/components/custom/large/about/About";
@@ -11,20 +12,21 @@ const Home = async() => {
   return (
     <main className="overflow-x-hidden">
       <Hero />
+      <Counter />
       
-      <LineCarsoul />
 
       <div id="Services" className="relative z-10">
         <Services />
       </div>
       
-      <div id="About" className="relative z-10">
-        <About />
-      </div>
-      
       <div id="Projects" className="relative z-10">
         <Portfolio />
       </div>
+      <div id="About" className="relative z-10">
+        <About />
+      </div>
+      <LineCarsoul />
+      
  
       <Tools />
      

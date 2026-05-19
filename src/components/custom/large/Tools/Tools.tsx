@@ -9,7 +9,7 @@ function Tools() {
     // Group tools by category logic could go here in future
     
     return (
-        <section id="Tools" className='w-11/12 max-w-7xl mx-auto py-16 sm:py-24'>
+        <section id="Tools" className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24'>
             <SectionHeader title='Tech Stack'>
                 My <span className='text-secondary'>Arsenal</span>
             </SectionHeader>
@@ -18,6 +18,7 @@ function Tools() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
                 className='grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-12'
             >
                 {toolsData.map((tool, index) => (

@@ -26,7 +26,7 @@ function ServiceCard({service, index}:ServiceCardProps) {
         dark:bg-white/5 bg-white/70 
         backdrop-blur-xl border border-white/20 dark:border-white/10
         rounded-3xl 
-        w-full sm:w-[20rem]
+        w-full
         flex flex-col items-center justify-between
         min-h-[22rem] p-6
         transition-all duration-300
@@ -39,8 +39,8 @@ function ServiceCard({service, index}:ServiceCardProps) {
         <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500 delay-100" />
 
         <div className='relative z-10 flex flex-col items-center flex-grow'>
-          <div className="p-4 rounded-2xl bg-gradient-to-br from-white/50 to-white/10 dark:from-white/10 dark:to-transparent border border-white/20 mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
-            <service.icon className='size-10 text-primary group-hover:text-secondary transition-colors duration-300' />
+          <div className="p-4 rounded-2xl bg-gradient-to-br from-white/60 to-white/20 dark:from-slate-800 dark:to-slate-900 border border-white/20 dark:border-slate-700/80 mb-6 shadow-sm dark:shadow-black/30 group-hover:scale-110 transition-transform duration-300">
+            <service.icon className='size-10 text-primary dark:text-secondary group-hover:text-secondary dark:group-hover:text-primary transition-colors duration-300' />
           </div>
           
           <h4 className='text-2xl font-bold capitalize mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary'>

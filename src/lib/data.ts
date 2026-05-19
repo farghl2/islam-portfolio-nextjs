@@ -12,28 +12,77 @@ export const navData =[
 ]
 
 export const carsoulData = [
-    'Website Dev', 'E-cmmerce Apps', 'Landing Pages', 'Real Estate Apps', 'Dashboards'
+    'Real Estate Platforms',
+    'Yachts Operations Platforms',
+    'Fintech Infrastructure',
+    'FMCG AI Commerce',
 ]
 
 export const servicesData: Service[] =[
-    {icon:Package,title:'E-Commerce',description:`Start selling online and reach more customers with ease and confidence.`},
-    {icon:Building2 ,title:'Real Estate',description:'Explore verified listings for rent and sale — safe, simple, and tailored to your needs'},
-    {icon:Globe ,title:'Portfolio',description:'Showcase your work and skills with a personalized, professional website'},
+    {icon:Building2 ,title:'Real Estate',description:'Next-generation real estate platforms and intelligent asset management.'},
+    {icon:Globe ,title:'Yachts',description:'Building intelligent transportation and operations platforms.'},
+    {icon:ServerCog,title:'Fintech',description:'Modern fintech infrastructure for businesses and digital services.'},
+    {icon:Package,title:'FMCG',description:'Smart commerce and FMCG infrastructure powered by AI.'},
   
 ]
 
 export const projectsData: Project[] = [
     {
-  img: '/projects/nourborsa.jpg', 
-  title: 'NourBorsa - AI Stock Analysis', 
-  description: 'منصة ذكية متكاملة لتحليل وتدقيق الأسهم في البورصة، تعتمد على البرمجة الخاصة لتقديم تحليلات دقيقة وفلاتر شرعية مدعومة بالذكاء الاصطناعي.', 
-  link: 'https://nourborsa.com/', 
-  tools: ['Next.js', 'React.js', 'NestJS', 'TypeScript', 'Tailwind CSS', 'AI Integration', 'PostgreSQL']
- },
-    {img: '/projects/03.png', title:'Ramsa - E-commerce', description:' هو متجرالكتروني متخصص في بيع القهوة وادواتها', link:'https://ramsa.vercel.app/' , tools:['Next.js','React.js','TS','Chadcn/ui' ,'html', 'css', 'tailwindCss']},
-    {img: '/projects/01.svg', title:'Layal - E-commerce', description:'layal هو متجرالكتروني متخصص في بيع الطرح', link:'https://www.layal-shop.com' , tools:['React.js','TS' ,'html', 'css', 'tailwindCss','MUI', 'firebase']},
-    {img: '/projects/02.jpeg', title:'Sakank - Real E-state', description:'هو موقع يخدم الطلبة بشكل اساسي في ايجاد سكن لهم بعيدا" عن النصب والاحتيال  في عملية تنظمية كاملة',link:'https://www.sakank.shop', tools:['React.js', 'Redux.js','TS' ,'html', 'css', 'tailwindCss', 'MUI', 'firebase']},
-   
+      img: '/projects/yacht.jpg',
+      title: 'Yacht Booking - Travel & Hospitality',
+      description: 'Luxury yacht chartering marketplace with AI-driven pricing, smart matching, instant booking, and itinerary planning.',
+      link: 'https://yacht-pi.vercel.app',
+      tools: ['Next.js', 'AI', 'NestJS', 'Stripe', 'Yachting']
+    },
+    {
+      img: '/projects/done.jpg',
+      title: 'Done Egypt - Real Estate Platform',
+      description: 'Production-grade multilingual real-estate platform with advanced search, map exploration, and AI assistant features.',
+      link: 'https://doneeg.com',
+      tools: ['Nest.js','Next.js 16', 'React 19', 'TypeScript', 'Mapbox', 'Leaflet', 'AI Assistant']
+    },
+    {
+      img: '/projects/propai.jpg',
+      title: 'PropAI CRM - SaaS Frontend',
+      description: 'Role-based CRM frontend for real-estate teams with lead management, analytics dashboards, and AI-driven insights.',
+      link: 'https://propaicrm.com',
+      tools: ['Nest.js','React 19', 'TypeScript', 'Vite', 'TanStack Query', 'Zustand']
+    },
+    {
+      img: '/projects/kmc.jpg',
+      title: 'KMC Medical - Full-Stack E-commerce',
+      description: '3-part architecture with storefront, admin dashboard, and scalable backend including auth, payments, and admin workflows.',
+      link: 'https://kandilmedicalortho.com',
+      tools: ['Next.js', 'React', 'NestJS', 'TypeScript', 'JWT', 'SendGrid']
+    },
+    {
+      img: '/projects/bariq.jpg',
+      title: 'Bariqe Al-Tamyoz - Corporate E-commerce',
+      description: 'Bilingual Saudi corporate e-commerce platform with RTL/LTR support, product workflows, auth, and map-enabled forms.',
+      link: 'https://bariqealtamyoz.com',
+      tools: ['node.js', 'Next.js 16', 'React 19', 'TypeScript', 'next-intl', 'React Leaflet', 'Zustand']
+    },
+    {
+      img: '/projects/nourborsa.jpg',
+      title: 'Nourborsa FinTech Platform',
+      description: 'Stock market analysis platform with real-time data, dynamic charting, and high-performance backend processing.',
+      link: 'https://nourborsa.com',
+      tools: ['Nest.js','Next.js', 'React', 'Node.js', 'TypeScript', 'Financial Charts']
+    },
+    {
+      img: '/projects/ryada.png',
+      title: 'ReyadaAI - SaaS Frontend',
+      description: 'AI entrepreneurship platform frontend with multilingual RTL/LTR support, interactive modules, and modern UI animations.',
+      link: 'https://reyada.vercel.app',
+      tools: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS', 'TanStack Query', 'Zustand']
+    },
+    {
+      img: '/projects/ramsa.jpg',
+      title: 'Ramsa E-commerce Platform',
+      description: 'Arabic-first e-commerce platform with advanced cart logic, tracking integrations, and responsive product experience.',
+      link: 'https://ramsa.vercel.app',
+      tools: ['Next.js', 'React', 'TypeScript', 'Zustand', 'Tailwind CSS']
+    },
 ]
 
 export const toolsData =[
@@ -66,3 +115,4 @@ export const socialData = [
     {icon:FaLinkedin, link:'https://www.linkedin.com/in/farghl2'},
 
 ]
+

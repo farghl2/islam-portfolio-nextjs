@@ -1,11 +1,11 @@
 'use client';
-import Image from "next/image";
+
 import Link from "next/link";
 import React from "react";
 import { Button } from "../../../ui/button";
 import { callMeData, navData } from "@/lib/data";
 import { useTheme } from "next-themes";
-import { Contrast, Moon, Sun } from "lucide-react";
+import {  Moon, Sun } from "lucide-react";
 
 
 
@@ -20,11 +20,11 @@ function Header() {
 
   return (
     <header className="rounded-[2rem] bg-white/80 dark:bg-slate-900/90 backdrop-blur-xl w-[95%] sm:w-[90%] mx-auto h-[60px] sm:h-[70px] sticky top-4 z-50 transition-all border border-slate-200 shadow-sm dark:border-slate-800">
-      <div className="w-11/12 lg:w-10/12 h-full mx-auto flex justify-between items-center">
+      <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 h-full mx-auto flex justify-between items-center">
         <Link
         
         href={"/"}  className="flex justify-center gap-3 items-center group">
-          <Image alt="logo" src={"/logo.svg"} width={40} height={40} className="group-hover:rotate-12 transition-transform duration-300"/>
+          {/* <Image alt="logo" src={"/logo.svg"} width={40} height={40} className="group-hover:rotate-12 transition-transform duration-300"/> */}
           <h1 className="text-xl md:text-3xl text-primary dark:text-white font-bold tracking-wider">I<span className="inline-block animate-bounce text-secondary">
             s
             </span>lam</h1>
