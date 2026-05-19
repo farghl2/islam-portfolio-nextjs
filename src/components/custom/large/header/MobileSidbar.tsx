@@ -8,7 +8,7 @@ import {
 import { Menu, ArrowRight, Sun, Moon } from "lucide-react";
 import { navData, socialData, callMeData } from "@/lib/data";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+
 import CustomButton from "../../atoms/CustomButton/customButton";
 import { useTheme } from "next-themes";
 
