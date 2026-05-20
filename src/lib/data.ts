@@ -43,7 +43,7 @@ export const projectsData: Project[] = [
     },
     {
       img: '/projects/propai.jpg',
-      title: 'PropAI CRM - SaaS Frontend',
+      title: 'PropAI CRM - SaaS',
       description: 'Role-based CRM frontend for real-estate teams with lead management, analytics dashboards, and AI-driven insights.',
       link: 'https://propaicrm.com',
       tools: ['Nest.js','React 19', 'TypeScript', 'Vite', 'TanStack Query', 'Zustand']

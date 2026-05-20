@@ -26,9 +26,9 @@ function ServiceCard({service, index}:ServiceCardProps) {
         dark:bg-white/5 bg-white/70 
         backdrop-blur-xl border border-white/20 dark:border-white/10
         rounded-3xl 
-        w-full
+        w-[92%] mx-auto sm:w-full
         flex flex-col items-center justify-between
-        min-h-[22rem] p-6
+        min-h-[5rem] p-6
         transition-all duration-300
         hover:shadow-2xl hover:shadow-primary/10
         group

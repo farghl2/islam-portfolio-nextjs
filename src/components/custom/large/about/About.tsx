@@ -4,6 +4,7 @@ import SectionHeader from '../../atoms/sectionHeader/SectionHeader';
 import { motion } from 'motion/react';
 import { BriefcaseBusiness, Code, Globe, Rocket } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import { callMeData } from '@/lib/data';
 
 const experiences = [
   {
@@ -148,9 +149,9 @@ function About() {
 
             <button
               className="relative z-10 px-8 py-3 bg-white text-slate-900 rounded-full font-bold hover:scale-105 transition-transform active:scale-95 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
-              onClick={() => document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.open(callMeData, '_blank')}
             >
-              Detailed Contact Below
+              start your project
             </button>
           </div>
         </motion.div>

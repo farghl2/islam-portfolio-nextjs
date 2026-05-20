@@ -117,7 +117,7 @@ const Hero = () => {
             
             <div className="relative w-full h-full rounded-[2rem] overflow-hidden border-4 border-white/20 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 ease-out glass group">
               <Image 
-                src={"/islam.webp"} 
+                src={"/hero-bg.webp"} 
                 className="object-cover w-full h-full bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-800 dark:to-slate-900 group-hover:scale-105 transition-transform duration-700" 
                 alt="Islam Farghl" 
                 width={500} 
