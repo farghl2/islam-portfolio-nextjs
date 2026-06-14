@@ -24,7 +24,7 @@ function LineCarsoul() {
           animate={{ x: ["0%", "-50%"] }}
           transition={{
             repeat: Infinity,
-            duration: isMobile ? 2.5 : 7,
+            duration: isMobile ? 12 : 18,
             ease: "linear"
           }}
         >

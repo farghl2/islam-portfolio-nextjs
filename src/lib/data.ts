@@ -56,19 +56,26 @@ export const projectsData: Project[] = [
       tools: ['Next.js', 'React', 'NestJS', 'TypeScript', 'JWT', 'SendGrid']
     },
     {
-      img: '/projects/bariq.jpg',
-      title: 'Bariqe Al-Tamyoz - Corporate E-commerce',
-      description: 'Bilingual Saudi corporate e-commerce platform with RTL/LTR support, product workflows, auth, and map-enabled forms.',
-      link: 'https://bariqealtamyoz.com',
-      tools: ['node.js', 'Next.js 16', 'React 19', 'TypeScript', 'next-intl', 'React Leaflet', 'Zustand']
-    },
-    {
-      img: '/projects/nourborsa.jpg',
-      title: 'Nourborsa FinTech Platform',
-      description: 'Stock market analysis platform with real-time data, dynamic charting, and high-performance backend processing.',
-      link: 'https://nourborsa.com',
-      tools: ['Nest.js','Next.js', 'React', 'Node.js', 'TypeScript', 'Financial Charts']
-    },
+  img: '/projects/smartsuq.jpg',
+  title: 'SmartSuq - Grocery & Local Commerce',
+  description: 'Angular e-commerce storefront for browsing products, filtering categories, managing a persistent cart, placing delivery orders, and sending real-time Telegram order notifications through Firebase.',
+  link: 'https://angular-smart-suq-app-gday.vercel.app',
+  tools: ['Angular', 'Firebase', 'Firestore', 'Angular Material', 'Telegram Bot API']
+},
+{
+  img: '/projects/nourborsa.jpg',
+  title: 'Nourborsa FinTech Platform',
+  description: 'Stock market analysis platform with real-time data, dynamic charting, and high-performance backend processing.',
+  link: 'https://nourborsa.com',
+  tools: ['Nest.js','Next.js', 'React', 'Node.js', 'TypeScript', 'Financial Charts']
+},
+{
+  img: '/projects/bariq.jpg',
+  title: 'Bariqe Al-Tamyoz - Corporate E-commerce',
+  description: 'Bilingual Saudi corporate e-commerce platform with RTL/LTR support, product workflows, auth, and map-enabled forms.',
+  link: 'https://bariqealtamyoz.com',
+  tools: ['node.js', 'Next.js 16', 'React 19', 'TypeScript', 'next-intl', 'React Leaflet', 'Zustand']
+},
     {
       img: '/projects/ryada.png',
       title: 'ReyadaAI - SaaS Frontend',
@@ -87,16 +94,20 @@ export const projectsData: Project[] = [
 
 export const toolsData =[
     {img:'/tools-images/nestjs.png',title:'Nest.js'},
+    {img:'/tools-images/ang.jpg',title:'Angular'},
     {img:'/tools-images/nextjslogo.png',title:'Next.js'},
     {img:'/tools-images/reactjs.png',title:'React.js'},
     {img:'/tools-images/zustand.jpeg',title:'Zustand'},
     {img:'/tools-images/Redux.png',title:'Redux.js'},
+    {img:'/tools-images/RxJS.png',title:'RxJS'},
     {img:'/tools-images/typescript.png',title:'Js/Ts'},
     {img:'/tools-images/mysql.png',title:'MySQL'},
     {img:'/tools-images/postgresql.png',title:'PostgreSQL'},
     {img:'/tools-images/html.png',title:'HTML'},
     {img:'/tools-images/css.png',title:'CSS'},
     {img:'/tools-images/Tailwind.png',title:`Tailwind`},
+    {img:'/tools-images/angmat.jpg',title:`Angular Material`},
+
     {img:'/tools-images/mui.png',title:'MUI'},
     {img:'/tools-images/shadcn.png',title:'Shadcn'},
     {img:'/tools-images/figma.png',title:'Figma'},

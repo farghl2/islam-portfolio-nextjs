@@ -42,6 +42,7 @@ function About() {
               Full-Stack Engineer focused on building modern web applications using
               <span className="text-primary dark:text-secondary font-semibold"> Next.js</span>,
               <span className="text-primary dark:text-secondary font-semibold"> React</span>,
+              <span className="text-primary dark:text-secondary font-semibold"> Angular</span>,
               <span className="text-primary dark:text-secondary font-semibold"> NestJS</span>, and
               <span className="text-primary dark:text-secondary font-semibold"> TypeScript</span>.
             </p>

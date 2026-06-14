@@ -79,7 +79,7 @@ const Hero = () => {
              A <strong>Fullstack Developer</strong> specializing in{' '}
              <span className="text-foreground font-semibold">
                <Typewriter
-                 words={['Next.js', 'Nest.js', 'React', 'Modern Web Apps']}
+                 words={['Next.js', 'Angular','Nest.js', 'React', 'Modern Web Apps']}
                  loop={0}
                  cursor
                  cursorStyle='_'

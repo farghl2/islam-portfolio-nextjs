@@ -7,6 +7,8 @@ import About from "@/components/custom/large/about/About";
 import Portfolio from "@/components/custom/large/portfolio/Portfolio";
 import Tools from "@/components/custom/large/Tools/Tools";
 import Footer from "@/components/custom/large/footer/Footer";
+import ChatButton from "@/features/chatbot/components/ChatButton";
+import ChatSheet from "@/features/chatbot/components/ChatSheet";
 
 const Home = async() => {
   return (
@@ -31,6 +33,8 @@ const Home = async() => {
       <Tools />
      
       <Footer />
+      <ChatButton />
+      <ChatSheet />
     </main>
   )
 }
