@@ -1,6 +1,6 @@
 
 import { House, ServerCog, Info ,FolderGit, Phone, Mail ,Package, Building2, Globe   } from 'lucide-react';
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { Project, Service } from './types';
 
 export const callMeData = 'https://wa.me/%2B201122882154';
@@ -12,21 +12,52 @@ export const navData =[
 ]
 
 export const carsoulData = [
+    'ERP & Enterprise Platforms',
+    'CRM & Lead Management',
+    'n8n AI Automation & Workflows',
+    'Construction & Finishing Marketplaces',
+    'Recruitment & HR Platforms',
     'Real Estate Platforms',
-    'Yachts Operations Platforms',
     'Fintech Infrastructure',
     'FMCG AI Commerce',
 ]
 
 export const servicesData: Service[] =[
-    {icon:Building2 ,title:'Real Estate',description:'Next-generation real estate platforms and intelligent asset management.'},
-    {icon:Globe ,title:'Yachts',description:'Building intelligent transportation and operations platforms.'},
-    {icon:ServerCog,title:'Fintech',description:'Modern fintech infrastructure for businesses and digital services.'},
-    {icon:Package,title:'FMCG',description:'Smart commerce and FMCG infrastructure powered by AI.'},
-  
+    {icon:Building2 ,title:'ERP & CRM Systems',description:'Enterprise Resource Planning, CRM platforms, and intelligent lead tracking architectures.'},
+    {icon:ServerCog ,title:'n8n & AI Automation',description:'End-to-end workflow automation, custom AI agents, webhook pipelines, and operational integrations.'},
+    {icon:Globe ,title:'Marketplaces & Portals',description:'High-scale digital marketplaces, contractor bidding platforms, and recruitment engines.'},
+    {icon:Package ,title:'Fintech & AI Commerce',description:'Modern fintech infrastructure, AI-driven commerce, and scalable digital services.'},
 ]
 
 export const projectsData: Project[] = [
+    {
+      img: '/projects/itashteeb.png',
+      title: 'iTashteeb - Construction & Finishing Marketplace',
+      description: 'Egypt-wide digital marketplace connecting clients with certified architectural, finishing, and contracting professionals with tender bidding and idea books.',
+      link: 'https://itashteeb.com',
+      tools: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS', 'next-intl', 'Zustand']
+    },
+    {
+      img: '/projects/itashteeb-dashboard.png',
+      title: 'iTashteeb Contractor & Admin Dashboard',
+      description: 'Comprehensive operations portal for contractors and admin teams with tender proposal submission, live quotation management, 3D interactive staging, and bilingual controls.',
+      link: 'https://dashboard.itashteeb.com/',
+      tools: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Zustand', 'REST APIs']
+    },
+    {
+      img: '/projects/employermagazine.png',
+      title: 'Employer Magazine - Job & Freelance Platform',
+      description: 'Job discovery portal and freelance contract marketplace across Egypt. Features smart search by city/role, company directories, and an AI-guided interactive CV Builder with exportable templates.',
+      link: 'https://employermagazine.com',
+      tools: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'AI CV Builder', 'Zustand']
+    },
+    {
+      img: '/projects/employer-dashboard.png',
+      title: 'Employer Magazine - Recruitment ATS Dashboard',
+      description: 'Enterprise recruitment operations and applicant tracking system (ATS) for hiring teams. Built with granular Role-Based Access Control (RBAC), permission stores, vacancy workflows, and billing.',
+      link: 'https://dashboard.employermagazine.com/sign-in?redirect=%2F',
+      tools: ['React', 'Vite', 'TypeScript', 'RBAC', 'Zustand', 'Axios', 'Tailwind CSS']
+    },
     {
       img: '/projects/yacht.jpg',
       title: 'Yacht Booking - Travel & Hospitality',
@@ -56,26 +87,26 @@ export const projectsData: Project[] = [
       tools: ['Next.js', 'React', 'NestJS', 'TypeScript', 'JWT', 'SendGrid']
     },
     {
-  img: '/projects/smartsuq.jpg',
-  title: 'SmartSuq - Grocery & Local Commerce',
-  description: 'Angular e-commerce storefront for browsing products, filtering categories, managing a persistent cart, placing delivery orders, and sending real-time Telegram order notifications through Firebase.',
-  link: 'https://angular-smart-suq-app-gday.vercel.app',
-  tools: ['Angular', 'Firebase', 'Firestore', 'Angular Material', 'Telegram Bot API']
-},
-{
-  img: '/projects/nourborsa.jpg',
-  title: 'Nourborsa FinTech Platform',
-  description: 'Stock market analysis platform with real-time data, dynamic charting, and high-performance backend processing.',
-  link: 'https://nourborsa.com',
-  tools: ['Nest.js','Next.js', 'React', 'Node.js', 'TypeScript', 'Financial Charts']
-},
-{
-  img: '/projects/bariq.jpg',
-  title: 'Bariqe Al-Tamyoz - Corporate E-commerce',
-  description: 'Bilingual Saudi corporate e-commerce platform with RTL/LTR support, product workflows, auth, and map-enabled forms.',
-  link: 'https://bariqealtamyoz.com',
-  tools: ['node.js', 'Next.js 16', 'React 19', 'TypeScript', 'next-intl', 'React Leaflet', 'Zustand']
-},
+      img: '/projects/smartsuq.jpg',
+      title: 'SmartSuq - Grocery & Local Commerce',
+      description: 'Angular e-commerce storefront for browsing products, filtering categories, managing a persistent cart, placing delivery orders, and sending real-time Telegram order notifications through Firebase.',
+      link: 'https://angular-smart-suq-app-gday.vercel.app',
+      tools: ['Angular', 'Firebase', 'Firestore', 'Angular Material', 'Telegram Bot API']
+    },
+    {
+      img: '/projects/nourborsa.jpg',
+      title: 'Nourborsa FinTech Platform',
+      description: 'Stock market analysis platform with real-time data, dynamic charting, and high-performance backend processing.',
+      link: 'https://nourborsa.com',
+      tools: ['Nest.js','Next.js', 'React', 'Node.js', 'TypeScript', 'Financial Charts']
+    },
+    {
+      img: '/projects/bariq.jpg',
+      title: 'Bariqe Al-Tamyoz - Corporate E-commerce',
+      description: 'Bilingual Saudi corporate e-commerce platform with RTL/LTR support, product workflows, auth, and map-enabled forms.',
+      link: 'https://bariqealtamyoz.com',
+      tools: ['node.js', 'Next.js 16', 'React 19', 'TypeScript', 'next-intl', 'React Leaflet', 'Zustand']
+    },
     {
       img: '/projects/ryada.png',
       title: 'ReyadaAI - SaaS Frontend',
@@ -93,13 +124,14 @@ export const projectsData: Project[] = [
 ]
 
 export const toolsData =[
-    {img:'/tools-images/nestjs.png',title:'Nest.js'},
-    {img:'/tools-images/ang.jpg',title:'Angular'},
     {img:'/tools-images/nextjslogo.png',title:'Next.js'},
     {img:'/tools-images/reactjs.png',title:'React.js'},
+    {img:'/tools-images/n8n.svg',title:'n8n'},
+    {img:'/tools-images/nestjs.png',title:'Nest.js'},
+    {img:'/tools-images/ang.jpg',title:'Angular'},
     {img:'/tools-images/zustand.jpeg',title:'Zustand'},
     {img:'/tools-images/Redux.png',title:'Redux.js'},
-    {img:'/tools-images/RxJS.png',title:'RxJS'},
+    {img:'/tools-images/rxjs.svg',title:'RxJS'},
     {img:'/tools-images/typescript.png',title:'Js/Ts'},
     {img:'/tools-images/mysql.png',title:'MySQL'},
     {img:'/tools-images/postgresql.png',title:'PostgreSQL'},
@@ -121,9 +153,8 @@ export const contactMeData =[
 ]
 
 export const socialData = [
-    {icon:FaFacebook, link:'https://www.facebook.com/islam.farghl'},
-    {icon:FaInstagram, link:'https://www.instagram.com/islammohammed11'},
     {icon:FaLinkedin, link:'https://www.linkedin.com/in/farghl2'},
-
+    {icon:FaGithub, link:'https://github.com/farghl2'},
+    {icon:FaTiktok, link:'https://www.tiktok.com/@farghl.com1'},
 ]
 

@@ -15,7 +15,7 @@ const Footer = () => {
       {/* Background Glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
       
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="w-[95%] sm:w-[90%] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Giant CTA Section */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 border-b border-white/10 pb-16 mb-16">

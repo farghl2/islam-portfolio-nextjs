@@ -52,7 +52,7 @@ const Hero = () => {
         <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-secondary/20 rounded-full blur-[120px] opacity-30" />
       </div>
 
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 sm:gap-12 lg:gap-8">
+      <div className="w-[95%] sm:w-[90%] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 sm:gap-12 lg:gap-8">
         
         {/* Text Content */}
         <motion.div 
@@ -79,7 +79,7 @@ const Hero = () => {
              A <strong>Fullstack Developer</strong> specializing in{' '}
              <span className="text-foreground font-semibold">
                <Typewriter
-                 words={['Next.js', 'Angular','Nest.js', 'React', 'Modern Web Apps']}
+                 words={['Next.js', 'ERP & CRM', 'n8n AI Automation', 'Nest.js', 'React', 'Angular']}
                  loop={0}
                  cursor
                  cursorStyle='_'

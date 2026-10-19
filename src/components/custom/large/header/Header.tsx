@@ -19,8 +19,8 @@ function Header() {
 
 
   return (
-    <header className="rounded-[2rem] bg-white/80 dark:bg-slate-900/90 backdrop-blur-xl w-[95%] sm:w-[90%] mx-auto h-[60px] sm:h-[70px] sticky top-4 z-50 transition-all border border-slate-200 shadow-sm dark:border-slate-800">
-      <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 h-full mx-auto flex justify-between items-center">
+    <header className="rounded-[2rem] bg-white/80 dark:bg-slate-900/90 backdrop-blur-xl w-[95%] sm:w-[90%] max-w-7xl mx-auto h-[60px] sm:h-[70px] sticky top-4 z-50 transition-all border border-slate-200 shadow-sm dark:border-slate-800">
+      <div className="w-full px-4 sm:px-6 lg:px-8 h-full mx-auto flex justify-between items-center">
         <Link
         
         href={"/"}  className="flex justify-center gap-3 items-center group">

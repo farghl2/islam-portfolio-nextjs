@@ -9,7 +9,7 @@ import ServiceCard from './ServiceCard'
 
 function Services() {
   return (
-    <section className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'> 
+    <section className='w-[95%] sm:w-[90%] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'> 
         <SectionHeader title='Services'>
         <span  className='text-secondary mr-2'>
           Services 

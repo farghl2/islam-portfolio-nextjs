@@ -18,7 +18,7 @@ function LineCarsoul() {
 
   return (
     <div className='w-full overflow-hidden py-10 sm:py-20 bg-background'>
-      <div className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden'>
+      <div className='w-[95%] sm:w-[90%] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden'>
         <motion.div 
           className='flex w-max items-center whitespace-nowrap'
           animate={{ x: ["0%", "-50%"] }}

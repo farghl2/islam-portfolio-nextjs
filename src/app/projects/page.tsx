@@ -5,7 +5,7 @@ import { projectsData } from '@/lib/data'
 
 const Projects = () => {
   return (
-  <section className='my-4 sm:my-12 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8'>
+  <section className='my-4 sm:my-12 mx-auto w-[95%] sm:w-[90%] max-w-7xl px-4 sm:px-6 lg:px-8'>
         
           
         <SectionHeader title='MY  Portfolio'>
@@ -14,7 +14,7 @@ const Projects = () => {
               Projects
               </span> 
         </SectionHeader>
-        <div className='mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto'>
+        <div className='mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mx-auto'>
         {projectsData.map((project, index)=><ProjectCard 
           key={project.link}
           project={project}

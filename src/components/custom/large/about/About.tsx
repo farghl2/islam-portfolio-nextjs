@@ -8,9 +8,19 @@ import { callMeData } from '@/lib/data';
 
 const experiences = [
   {
+    company: 'e-RAMO For Digital Solutions',
+    role: 'Frontend Engineer',
+    period: 'Recent - Present',
+    points: [
+      'Leading frontend engineering for high-traffic products: iTashteeb finishing marketplace and Employer Magazine recruitment platform.',
+      'Architected contractor and ATS operations dashboards featuring RBAC permission engines, multi-step tender flows, and interactive state.',
+      'Engineered responsive, multilingual (Arabic & English / RTL-LTR) experiences with Next.js, React, TypeScript, and modern design systems.',
+    ],
+  },
+  {
     company: 'RockaiDev',
     role: 'Fullstack Engineer',
-    period: 'Dec 2025 - Present',
+    period: '2024 - 2025',
     points: [
       'Engineered PropAI CRM with role-based access, AI lead insights, and KPI dashboards.',
       'Built Done Egypt, a multilingual real-estate platform with map integrations and AI assistant.',
@@ -21,7 +31,7 @@ const experiences = [
 
 function About() {
   return (
-    <section id="About" className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 overflow-hidden'>
+    <section id="About" className='w-[95%] sm:w-[90%] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 overflow-hidden'>
       <SectionHeader title='Experience'>
         My Professional <span className='text-secondary'>Experience</span>
       </SectionHeader>
@@ -36,25 +46,25 @@ function About() {
         >
           <Card className="h-full p-8 bg-white/60 dark:bg-slate-900/80 backdrop-blur-md border border-primary/15 dark:border-slate-700/70 hover:border-primary/40 transition-colors rounded-[2rem]">
             <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <BriefcaseBusiness className="text-secondary" /> Fullstack Engineer
+              <BriefcaseBusiness className="text-secondary" /> Frontend Engineer
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Full-Stack Engineer focused on building modern web applications using
+              Frontend Engineer focused on building modern, high-performance web applications using
               <span className="text-primary dark:text-secondary font-semibold"> Next.js</span>,
               <span className="text-primary dark:text-secondary font-semibold"> React</span>,
-              <span className="text-primary dark:text-secondary font-semibold"> Angular</span>,
-              <span className="text-primary dark:text-secondary font-semibold"> NestJS</span>, and
-              <span className="text-primary dark:text-secondary font-semibold"> TypeScript</span>.
+              <span className="text-primary dark:text-secondary font-semibold"> TypeScript</span>,
+              <span className="text-primary dark:text-secondary font-semibold"> Angular</span>, and
+              <span className="text-primary dark:text-secondary font-semibold"> NestJS</span>.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I build scalable frontends, multilingual systems, map-based experiences,
-              and backend architectures with secure authentication, payments, and admin workflows.
+              I build scalable frontends, ERP & CRM platforms, n8n AI workflow automations, multilingual systems,
+              and enterprise dashboard architectures with secure RBAC workflows, dynamic forms, and seamless UX.
             </p>
           </Card>
         </motion.div>
 
         <motion.div
-          className="md:col-span-12 lg:col-span-5"
+          className="md:col-span-12 lg:col-span-5 flex flex-col gap-4"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -63,7 +73,7 @@ function About() {
           {experiences.map((item) => (
             <Card
               key={item.company}
-              className="h-full p-6 bg-white/60 dark:bg-slate-900/80 backdrop-blur-md border border-primary/15 dark:border-slate-700/70 hover:border-primary/40 rounded-[1.5rem]"
+              className="p-6 bg-white/60 dark:bg-slate-900/80 backdrop-blur-md border border-primary/15 dark:border-slate-700/70 hover:border-primary/40 rounded-[1.5rem]"
             >
               <div className="flex items-start justify-between gap-3">
                 <div>

@@ -3,8 +3,9 @@ import { callMeData, contactMeData, projectsData, servicesData, toolsData } from
 export const COMPANY_INFO = {
   name: 'Islam Farghl',
   tagline: 'Fullstack Engineer',
+  company: 'e-RAMO For Digital Solutions',
   description:
-    'Portfolio and delivery-focused engineering services across real estate, fintech, yachting, and e-commerce products.',
+    'Fullstack Engineer at e-RAMO For Digital Solutions, crafting high-performance platforms across construction marketplaces (iTashteeb), recruitment & ATS systems (Employer Magazine), real estate, and e-commerce.',
   founder: 'Islam Farghl',
   foundedYear: 2025,
   website: 'https://farghl.com',

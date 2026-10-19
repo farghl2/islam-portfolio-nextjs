@@ -9,7 +9,7 @@ function Tools() {
     // Group tools by category logic could go here in future
     
     return (
-        <section id="Tools" className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24'>
+        <section id="Tools" className='w-[95%] sm:w-[90%] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24'>
             <SectionHeader title='Tech Stack'>
                 My <span className='text-secondary'>Arsenal</span>
             </SectionHeader>
